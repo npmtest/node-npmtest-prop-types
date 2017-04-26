@@ -1,6 +1,6 @@
 # npmtest-prop-types
 
-#### test coverage for  [prop-types (v15.5.8)](https://facebook.github.io/react/)  [![npm package](https://img.shields.io/npm/v/npmtest-prop-types.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-prop-types) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-prop-types.svg)](https://travis-ci.org/npmtest/node-npmtest-prop-types)
+#### basic test coverage for  [prop-types (v15.5.8)](https://facebook.github.io/react/)  [![npm package](https://img.shields.io/npm/v/npmtest-prop-types.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-prop-types) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-prop-types.svg)](https://travis-ci.org/npmtest/node-npmtest-prop-types)
 
 #### Runtime type checking for React props and similar objects.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-prop-types/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-prop-types/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-prop-types/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-prop-types/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-prop-types/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-prop-types/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-prop-types/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-prop-types/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-prop-types/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-prop-types/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-prop-types/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-prop-types/build/coverage.html/index.html)
 
@@ -120,7 +120,8 @@
         "umd": "NODE_ENV=development browserify index.js -t envify --standalone PropTypes -o prop-types.js",
         "umd-min": "NODE_ENV=production browserify index.js -t envify -t uglifyify --standalone PropTypes  -p bundle-collapser/plugin -o | uglifyjs --compress unused,dead_code -o prop-types.min.js"
     },
-    "version": "15.5.8"
+    "version": "15.5.8",
+    "bin": {}
 }
 ```
 
